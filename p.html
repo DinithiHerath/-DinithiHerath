@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrolling Example</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+      
+    }
+
+    /* Optional CSS styling for the sections */
+    section {
+        padding: 3rem 3rem;
+   max-width: 1200px;
+   margin: 0 auto;
+     
+
+    }
+    
+    </style>
+    <style>
+        div.scroll-container {
+          background-color: #333;
+          overflow: auto;
+          white-space: nowrap;
+          padding: 4px;
+        }
+        
+        div.scroll-container img {
+          padding: 4px;
+        }
+        </style>
+
+     <style>
+        body {
+          font-family: "Lato", sans-serif;
+          background-image: url(images/30.jpg);
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #104a81;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 14px;}
+        }
+    
+        </style>
+        
+</head>
+<body>
+
+     <!--Nevigation bar-->
+   <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#Flower Arrangements">Flower Arrangements</a><br>
+    <a href="#Celebrations">Celebrations</a><br>
+    <a href="#Fast Delivary Flowers">Fast Delivary Flowers</a><br>
+    <a href="#Combo Gifts">Combo Gifts</a>
+  </div>
+  
+  <span style="font-size:30px;cursor:pointer;color:#726958;" onclick="openNav()">&#9776;</span>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+  <!-- header section starts  -->
+
+<section class="header">
+
+    <div class="flex">
+      <h2><b><a href="#home" class="logo">Share Happiness</a></b></h2>
+       <div class="icon">
+          <h2 class="logo"><img src="images/logo1.jpg" width="200" style="border-radius: 40%  ;"></h2>
+        </div>
+       <a href="#availability" class="btn">check availability</a>
+       <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Reviews</a>
+     </nav>
+</section>
+  </header>
+
+  <!-- availability section starts  -->
+
+<section class="availability" id="availability">
+    
+    <form action="" method="post">
+       <div class="flex">
+          <div class="box">
+             <p style="font-size: 25px;">Place of Delivary <span>*</span></p>
+             <select name="adults" class="input" style="font-size: 25px" required>
+                <option value="1">Place of Delivary</option>
+                <option value="2">Kandy</option>
+                <option value="3">Kurunegala</option>
+                <option value="4">Galle</option>
+                <option value="5">Colombo</option>
+             </select>
+          </div>
+          <div class="box">
+             <p style="font-size: 25px">Price<span>*</span></p>
+             <select name="childs" class="input" style="font-size: 25px" required>
+                <option value="1">Price</option>
+                <option value="2">Below Rs.5000</option>
+                <option value="3">From Rs.5000-8000</option>
+                <option value="4">From Rs.8000-12000</option>
+                <option value="5">From 12000 to onwards</option>
+                
+             </select>
+          </div>
+
+          <div class="box">
+             <p style="font-size: 25px">Date of Delivary <span>*</span></p>
+             <select name="rooms" class="input" style="font-size: 25px" required>
+                <option value="1">Date of Delivary</option>
+                <option value="2">Same Day Delivary</option>
+                <option value="3">Future Date Delivary</option>
+             </select>
+          </div>
+       </div><br>
+       <input type="submit" value="check availability" name="check" class="btn"style="font-size: 25px">
+    </form>
+    
+ </section>
+ 
+ <!-- availability section ends -->
+  
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <div class="scroll-container">
+        <img src="images/25.jpg" alt="Cinque Terre" width="470" height="450">
+        <img src="images/28.jpg" alt="Forest" width="470" height="450">
+        <img src="images/13.jpg" alt="Northern Lights" width="470" height="450">
+        <img src="images/23.jpg" alt="Mountains" width="470" height="450">
+      </div>
+      <p>This is the content of Section 1.</p>
+    </section>
+    
+    <section id="about">
+      <h2>About Us</h2>
+      <p>This is the content of Section 2.</p>
+    </section>
+
+    <section id="Flower Arrangements">
+        <h2>Flower Arrangements</h2>
+        <p>This is the content of Section 3.</p>
+      </section>
+
+      <section id="Celebrations">
+        <h2>Celebrations</h2>
+        <p>This is the content of Section 3.</p>
+      </section>
+
+      <section id="Fast Delivary Flowers">
+        <h2>Fast Delivary Flowers</h2>
+        <p>This is the content of Section 3.</p>
+      </section>
+
+      <section id="Combo Gifts">
+        <h2>Combo Gifts</h2>
+        <p>This is the content of Section 3.</p>
+      </section>
+    
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>This is the content of Section 3.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>This is the content of Section 3.</p>
+      </section>
+
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <p>This is the content of Section 3.</p>
+      </section>
+
+
+  </main>
+
+  <script src="js/script1.css"></script>
+</body>
+</html>

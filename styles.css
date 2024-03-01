@@ -1,0 +1,187 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+  }
+  
+  main {
+    padding-top: 60px; /* Add padding to create space for the fixed header */
+  }
+  
+  section {
+    height: 500px;
+    margin: 0 auto; /* Adjust the height based on your content */
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+
+  .header{
+    padding-bottom: 0;
+ }
+ 
+ 
+ 
+ .header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    
+ }
+ 
+ .header
+ {height: 350px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    }
+ 
+ .header .flex .logo{
+    color: var(--sub-color);
+    font-size: 1.8rem;
+    align-items: center;
+    
+ }
+ 
+ .header .flex .btn{
+    margin-top: 0;
+ }
+ 
+ .header .flex .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--sub-color);
+    display: none;
+ }
+
+ .header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--sub-color);
+    padding: .5rem;
+    border-radius: .5rem;
+ }
+ 
+ .header .navbar a{
+    font-size: 1.8rem;
+    color: var(--main-color);
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+ }
+ 
+ .header .navbar a:hover{
+    background-color: var(--main-color);
+    color: var(--sub-color);
+ }
+
+ .recipes {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr) auto;
+   grid-gap: 30px;
+ }
+ 
+ .recipe {
+   background-color: #f2f2f2;
+   padding: 30px;
+   text-align: center;
+ }
+ 
+ .recipe h3 {
+   margin-bottom: 30px;
+ }
+ 
+ .recipe p {
+   font-style: italic;
+ }
+ 
+ 
+
+ .availability
+    {height: 300px;
+        margin-bottom: 20px;
+        background-color: lightgray;}
+ 
+
+ .availability form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+ }
+ 
+ .availability form .flex .box{
+    flex: 1 1 20rem;
+ }
+ 
+ .availability form .flex .box p{
+    font-size: 2rem;
+    color: var(--sub-color);
+ }
+ 
+ .availability form .flex .box .input{
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    border-bottom: var(--border);
+    margin: 1rem 0;
+ }
+ 
+ .availability form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+ }
+
+ .footer-social a i {
+   color: rgba(237, 230, 230, 0.75);
+   font-size: 40px;
+   margin-left: 10px;
+   text-align: center;
+   line-height: 40px;
+   background-color: #f4eeee;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+ }
+
+ .footer-social {
+   margin-top: 10px;
+ }
+ 
+ .footer-social a {
+   display: inline-block;
+   margin: 0 5px;
+   font-size: 30px;
+   color: #333;
+ }
+ 
+ .footer-social a:hover {
+   color: #000;
+ }
+
+ 
+
+
+ 
